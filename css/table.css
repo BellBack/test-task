@@ -1,0 +1,55 @@
+table{
+    border-spacing: 0 0.5em;
+    width: 100%;
+    table-layout:fixed;
+}
+tr th{
+    color: ghostwhite;
+    background-color: rgb(132, 132, 132);
+}
+tr td{
+    background-color: #b6d7d7;
+}
+tr td:first-child, tr th:first-child{
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+tr td:last-child, tr th:last-child{
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+.category-icon, .row-icon{
+    fill: #424242;
+}
+.header-icon{
+    fill: ghostwhite;
+}
+td, th{
+    padding: 1em;
+    text-align: left;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    height: 2em;
+}
+/*notes table*/
+.created, .category1{
+    width: 8em;
+}
+.category-icon, .active-icon{
+    width: 4em;
+}
+/*stats table*/
+.active, .archived{
+    width: 20%;
+}
+svg{
+    max-height: 2em;
+    max-width: 2em;
+}
+
+@media screen and (max-width: 800px) {
+    .created, .dates{
+        width: 0;
+    }
+}
